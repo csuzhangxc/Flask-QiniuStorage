@@ -24,6 +24,7 @@ QINIU_BUCKET_NAME = '七牛空间名称'
 QINIU_BUCKET_DOMAIN = '七牛空间对应域名'
 
 app = Flask(__name__)
+app.config.from_object(__name__)
 qiniu_store = Qiniu(app)
 # 或者
 # qiniu_store = Qiniu()

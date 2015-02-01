@@ -2,8 +2,8 @@
 [七牛云存储](http://www.qiniu.com/)Flask扩展，Qiniu Storage for Falsk
 
 ## 安装
-使用*Flask-QiniuStorage*前需要正确安装 [qiniu python-sdk](https://github.com/qiniu/python-sdk)
-复制*flask_qiniustorage.py*文件到项目目录
+- 使用*Flask-QiniuStorage*前需要正确安装 [qiniu python-sdk](https://github.com/qiniu/python-sdk)
+- 复制*flask_qiniustorage.py*文件到项目目录
 
 ## 配置
 | 配置项 | 说明 |
@@ -50,7 +50,7 @@ def url():
     filename = 'filename'
     return qiniu_store.url(filename)
 ```
-参考[tests.py](/tests.py)
+参考*tests.py*
 
 ## 返回值
 `save`与`delete`返回的`ret`、`info`为[qiniu python-sdk](https://github.com/qiniu/python-sdk)中对应API的返回值，可在成功操作与失败操作时分别打印查看其具体内容
@@ -65,4 +65,4 @@ $ python tests.py
 ```
 
 ## 许可
-The MIT License (MIT). 详情见 [License文件](/LICENSE)
+The MIT License (MIT). 详情见 __License文件__

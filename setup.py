@@ -10,7 +10,7 @@ setup(
     license='MIT',
     author='Zhang Xuecheng',
     author_email='csuzhangxc@gmail.com',
-    description='Qiniu Storage for Falsk',
+    description='Qiniu Storage for Flask',
     long_description=open('README.md').read(),
     py_modules=['flask_qiniustorage'],
     license=open('LICENSE').read(),

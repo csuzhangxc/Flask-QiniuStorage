@@ -2,8 +2,9 @@
 [七牛云存储](http://www.qiniu.com/)Flask扩展，Qiniu Storage for Falsk
 
 ## 安装
-- 使用*Flask-QiniuStorage*前需要正确安装 [qiniu python-sdk](https://github.com/qiniu/python-sdk)
-- 复制*flask_qiniustorage.py*文件到项目目录
+```python
+pip install Flask-QiniuStorage
+```
 
 ## 配置
 | 配置项 | 说明 |
@@ -31,7 +32,7 @@ qiniu_store = Qiniu(app)
 # qiniu_store.init_app(app)
 
 # 保存文件到七牛
-@api.route('/save')
+@app.route('/save')
 def save():
     data = 'data to save'
     filename = 'filename'
@@ -39,14 +40,14 @@ def save():
     return str(ret)
 
 # 删除七牛空间中的文件
-@api.route('/delete')
+@app.route('/delete')
 def delete():
     filename = 'filename'
     ret, info = qiniu_store.delete(filename)
     return str(ret)
 
 # 根据文件名获取对应的公开URL
-@api.route('/url')
+@app.route('/url')
 def url():
     filename = 'filename'
     return qiniu_store.url(filename)

@@ -1,6 +1,6 @@
 Flask-QiniuStorage
 ==================
-`七牛云存储 <http://www.qiniu.com/>`_ Flask扩展，Qiniu Storage for Falsk
+`七牛云存储 <http://www.qiniu.com/>`_ Flask扩展，Qiniu Storage for Flask
 
 安装
 ------------

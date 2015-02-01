@@ -5,14 +5,13 @@ from setuptools import setup
 
 setup(
     name='Flask-QiniuStorage',
-    version='0.9.2',
+    version='0.9.3',
     url='https://github.com/csuzhangxc/Flask-QiniuStorage',
     license='MIT',
     author='Zhang Xuecheng',
     author_email='csuzhangxc@gmail.com',
-    description='''Qiniu Storage for Falsk.
-    Please visit: https://github.com/csuzhangxc/Flask-QiniuStorage''',
-    long_description=open('README.rst').read(),
+    description='Qiniu Storage for Flask',
+    long_description='Qiniu Storage for Flask. Please visit: https://github.com/csuzhangxc/Flask-QiniuStorage',
     py_modules=['flask_qiniustorage'],
     zip_safe=False,
     include_package_data=True,

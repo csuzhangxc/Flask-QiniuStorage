@@ -81,9 +81,7 @@ Flask-QiniuStorage
 
 测试
 ------
-
-.. code-block:: python
-    $ python tests.py
+$ python tests.py
 
 
 许可

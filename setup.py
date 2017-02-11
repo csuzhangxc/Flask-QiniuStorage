@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name='Flask-QiniuStorage',
-    version='0.9.3',
+    version='0.9.4',
     url='https://github.com/csuzhangxc/Flask-QiniuStorage',
     license='MIT',
     author='Zhang Xuecheng',

@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from urlparse import urljoin
+try:
+    from urlparse import urljoin
+except ImportError:
+    from urllib.parse import urljoin
 import qiniu as QiniuClass
 
 

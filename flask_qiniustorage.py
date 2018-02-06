@@ -35,3 +35,7 @@ class Qiniu(object):
 
     def url(self, filename):
         return urljoin(self._base_url, filename)
+
+    def private_url(self, filename):
+        auth = QiniuClass.Auth(self._access_key, self._secret_key)
+        return auth.private_download_url(urljoin(self._base_url, filename), expires=3600)
